@@ -1,10 +1,11 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmacia Salud Vida</title>
+    <!-- Importación de FontAwesome para iconos reales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         * {
@@ -92,6 +93,49 @@
             line-height: 1.7;
         }
 
+        /* NUEVA SECCIÓN DE CONTENIDO DESTACADO / VALOR DIFERENCIAL */
+        .contenido-destacado {
+            background-color: #f0f7f9;
+        }
+
+        .innovacion-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .innovacion-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .innovacion-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .innovacion-card i {
+            font-size: 40px;
+            color: #168aad;
+            margin-bottom: 15px;
+        }
+
+        .innovacion-card h3 {
+            color: #126782;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .innovacion-card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+
         .servicios {
             display: flex;
             justify-content: center;
@@ -106,6 +150,12 @@
             border-radius: 8px;
             text-align: center;
             background-color: #fafafa;
+        }
+
+        .servicio i {
+            font-size: 30px;
+            color: #168aad;
+            margin-bottom: 15px;
         }
 
         .servicio h3 {
@@ -164,6 +214,7 @@
     <nav>
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Nosotros</a>
+        <a href="#novedades">Novedades</a>
         <a href="#servicios">Servicios</a>
         <a href="#empresa">Tipo Empresarial</a>
         <a href="#contacto">Contacto</a>
@@ -203,6 +254,42 @@
         </div>
     </section>
 
+    <!-- SECCIÓN DE CONTENIDO NOVEDOSO -->
+    <section id="novedades" class="contenido-destacado">
+        <h2>Innovación y Compromiso al Cuidado de tu Bienestar</h2>
+        <div class="contenido">
+            <p>
+                En Farmacia Salud Vida integramos nuevas alternativas tecnológicas y de atención personalizada para optimizar la experiencia de salud de toda la comunidad.
+            </p>
+        </div>
+
+        <div class="innovacion-grid">
+            <div class="innovacion-card">
+                <i class="fa-solid fa-pills"></i>
+                <h3>Gestión de Recetas Digitales</h3>
+                <p>Envía tu fórmula médica de forma digital y recibe alertas automáticas cuando tus medicamentos estén listos para retiro.</p>
+            </div>
+
+            <div class="innovacion-card">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Monitoreo Preventivo</h3>
+                <p>Espacios acondicionados con tecnología de última generación para chequeos rápidos de presión arterial y control de signos vitales.</p>
+            </div>
+
+            <div class="innovacion-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Entrega Segura a Domicilio</h3>
+                <p>Logística optimizada de cadena de frío garantizada para medicamentos especializados y productos de cuidado delicado.</p>
+            </div>
+
+            <div class="innovacion-card">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>Línea de Bienestar Natural</h3>
+                <p>Amplio catálogo verificado de productos dermocosméticos eco-amigables y suplementos de origen orgánico certificados.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- SERVICIOS -->
     <section id="servicios">
         <h2>Servicios</h2>
@@ -210,6 +297,7 @@
         <div class="servicios">
 
             <div class="servicio">
+                <i class="fa-solid fa-capsules"></i>
                 <h3>Venta de medicamentos</h3>
                 <p>
                     Contamos con diferentes productos
@@ -218,6 +306,7 @@
             </div>
 
             <div class="servicio">
+                <i class="fa-solid fa-hand-holding-medical"></i>
                 <h3>Orientación</h3>
                 <p>
                     Brindamos información general sobre
@@ -226,6 +315,7 @@
             </div>
 
             <div class="servicio">
+                <i class="fa-solid fa-pump-soap"></i>
                 <h3>Cuidado personal</h3>
                 <p>
                     Productos de higiene y cuidado
@@ -292,4 +382,3 @@
 
 </body>
 </html>
-```
