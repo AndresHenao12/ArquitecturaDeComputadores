@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Ayuda - Farmacia Salud Vida</title>
+    <!-- Importación de FontAwesome para iconos reales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #168aad;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #126782;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 50px 10%;
+            background-color: white;
+            margin-top: 10px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #168aad;
+            margin-bottom: 25px;
+        }
+
+        .contenido {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        /* Estilos específicos para la mesa de ayuda */
+        .ayuda-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .ayuda-card {
+            background: #fafafa;
+            padding: 30px 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .ayuda-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .ayuda-card i {
+            font-size: 40px;
+            color: #168aad;
+            margin-bottom: 15px;
+        }
+
+        .ayuda-card h3 {
+            color: #126782;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .ayuda-card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .btn-ayuda {
+            display: inline-block;
+            background-color: #168aad;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .btn-ayuda:hover {
+            background-color: #126782;
+        }
+
+        .faq-section {
+            margin-top: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-item {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .faq-item h4 {
+            color: #168aad;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .faq-item p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #126782;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+            section {
+                padding: 40px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Farmacia Salud Vida</h1>
+        <p>Centro de Soporte y Atención al Cliente</p>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN INTEGRADO -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#novedades">Novedades</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="mesa-de-ayuda.html" style="text-decoration: underline;">Mesa de Ayuda</a>
+        <a href="index.html#contacto">Contacto</a>
+    </nav>
+
+    <!-- CONTENIDO DE LA MESA DE AYUDA -->
+    <section>
+        <h2>Mesa de Ayuda y Soporte Técnico</h2>
+        
+        <div class="contenido">
+            <p>
+                ¿Tienes dudas con tus pedidos, recetas digitales o necesitas asistencia personalizada? 
+                Nuestro equipo de soporte está disponible para guiarte y resolver cualquier inconveniente de manera rápida.
+            </p>
+        </div>
+
+        <div class="ayuda-grid">
+            <div class="ayuda-card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Soporte Telefónico</h3>
+                <p>Comunícate de manera directa con un asesor farmacéutico para resolver consultas urgentes.</p>
+                <a href="tel:3001234567" class="btn-ayuda">Llamar Ahora</a>
+            </div>
+
+            <div class="ayuda-card">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <h3>Consulta por Correo</h3>
+                <p>Envíanos tus requerimientos detallados o soporte de recetas y te responderemos en breve.</p>
+                <a href="mailto:contacto@saludvida.com" class="btn-ayuda">Enviar Mensaje</a>
+            </div>
+
+            <div class="ayuda-card">
+                <i class="fa-solid fa-file-medical"></i>
+                <h3>Estado de Recetas</h3>
+                <p>Verifica el progreso de validación de tus fórmulas médicas y medicamentos especiales solicitados.</p>
+                <a href="index.html#contacto" class="btn-ayuda">Consultar Estado</a>
+            </div>
+        </div>
+
+        <!-- SECCIÓN DE PREGUNTAS FRECUENTES -->
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+            
+            <div class="faq-item">
+                <h4><i class="fa-solid fa-circle-question"></i> ¿Cómo puedo enviar mi receta digital?</h4>
+                <p>Puedes enviarnos tu fórmula médica a través de nuestro correo de contacto o comunicándote a nuestra línea telefónica para coordinar la validación con el químico farmacéutico.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4><i class="fa-solid fa-circle-question"></i> ¿Cuál es el tiempo estimado de entrega a domicilio?</h4>
+                <p>Los domicilios locales se procesan y despachan en un rango de 45 a 60 minutos, garantizando la cadena de frío adecuada para los productos que lo requieran.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4><i class="fa-solid fa-circle-question"></i> ¿Qué métodos de pago aceptan?</h4>
+                <p>Aceptamos pagos electrónicos mediante billeteras digitales, transferencias bancarias y pagos contra entrega en efectivo o datáfono.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Farmacia Salud Vida - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
